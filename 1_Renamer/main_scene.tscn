@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c2hvm2fqr4iuj"]
+
+[node name="Node2D" type="Node2D" unique_id=1502028122]
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=332100638]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="prefix_Button4" type="Button" parent="PanelContainer" unique_id=658727556]
+layout_mode = 2
+text = "boop"
+
+[node name="prefix_Button3_sufferix" type="Button" parent="PanelContainer" unique_id=1973719186]
+layout_mode = 2
+text = "boop"
+
+[node name="prefix_Button3_suffffff" type="Button" parent="PanelContainer/prefix_Button3_sufferix" unique_id=744906300]
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 31.0
+text = "boop"
+
+[node name="prefix_Button2_suffffff" type="Button" parent="PanelContainer/prefix_Button3_sufferix" unique_id=2114712193]
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 40.0
+text = "boop"

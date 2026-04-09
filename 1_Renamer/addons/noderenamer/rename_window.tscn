@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://vet7oudj0744"]
+
+[ext_resource type="Script" uid="uid://c1tv5awh78aoa" path="res://addons/noderenamer/apply_renaming.gd" id="1_lpcoa"]
+
+[node name="RenameWindow" type="Control" unique_id=65419506]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lpcoa")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1696231104]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 200.0
+offset_bottom = 100.0
+
+[node name="String" type="LineEdit" parent="VBoxContainer" unique_id=688455882]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "your string"
+alignment = 1
+
+[node name="RadioButtonContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=2110997360]
+layout_mode = 2
+alignment = 1
+
+[node name="PrefixButton" type="CheckButton" parent="VBoxContainer/RadioButtonContainer" unique_id=1745001820]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Prefix"
+
+[node name="SuffixLabel" type="Label" parent="VBoxContainer/RadioButtonContainer" unique_id=1286998814]
+layout_mode = 2
+text = "Suffix"
+horizontal_alignment = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=848358384]
+layout_mode = 2
+alignment = 1
+
+[node name="ApplyButton" type="Button" parent="VBoxContainer/ButtonContainer" unique_id=1414768378]
+layout_mode = 2
+text = "Apply"
+
+[node name="CancelButton" type="Button" parent="VBoxContainer/ButtonContainer" unique_id=965206959]
+layout_direction = 2
+layout_mode = 2
+text = "Cancel"
+
+[connection signal="pressed" from="VBoxContainer/ButtonContainer/ApplyButton" to="." method="_on_apply_button_pressed"]
